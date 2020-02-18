@@ -59,4 +59,4 @@ const MenuButton = ({ hiddenMenu }) => {
   )
 }
 
-export default MenuButton
+export default MenuButton;

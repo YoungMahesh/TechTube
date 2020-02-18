@@ -3,12 +3,16 @@ import Layout from "../layout/layout"
 import "./styles/card-styles.scss"
 import { graphql } from "gatsby"
 import { GlobalDispatchContext } from "../context/store"
+import { Helmet } from "react-helmet"
 
 export default ({ data }) => {
   const { nodes } = data.allYoutubeCssGrid
   const dispatch = useContext(GlobalDispatchContext)
   return (
     <Layout>
+      <Helmet>
+        <title>CSS Grid</title>
+      </Helmet>
       <div className="page">
         {nodes.map(node => {
           const { thumbnails, resourceId } = node.snippet

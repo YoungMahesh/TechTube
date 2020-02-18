@@ -6,10 +6,10 @@ const Overlay = () => {
   const state = useContext(GlobalStateContext)
   const dispatch = useContext(GlobalDispatchContext)
   const { showOverlay, url } = state
-  if(typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     var overlayItem = document.querySelector(".overlay-item")
   }
-  
+
   var stopVideo = function(element) {
     var iframe = element.querySelector("iframe")
     var video = element.querySelector("video")

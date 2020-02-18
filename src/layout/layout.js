@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
   return (
     <div className="app">
       <Overlay />
+
       <div className="gatsby">
         <nav className={hidden ? "hideNav" : "showNav"}>
           <div className="nav-title">
@@ -58,4 +59,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default Layout;
