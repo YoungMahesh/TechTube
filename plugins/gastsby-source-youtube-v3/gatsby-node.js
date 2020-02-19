@@ -26,14 +26,14 @@ exports.sourceNodes = (
     return nodeData
   }
 
-  const { kind, key, id, name } = configOptions
+  const { kind, API_KEY, id, name } = configOptions
   const kindTypes = {
     playlists: "channelId",
     playlistItems: "playlistId",
   }
   const idType = kindTypes[kind]
 
-  const apiUrl = `https://www.googleapis.com/youtube/v3/${kind}?part=id,snippet,contentDetails&${idType}=${id}&key=${key}&maxResults=50`
+  const apiUrl = `https://www.googleapis.com/youtube/v3/${kind}?part=id,snippet,contentDetails&${idType}=${id}&key=${API_KEY}&maxResults=50`
   //`https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&channelId=UCGdpLgMhkN2hKIcqno18aCQ&key=AIzaSyD795V8WoL_JXYHqqUgCEgxh783QCXTpII`
 
   // Gatsby expects sourceNodes to return a promise

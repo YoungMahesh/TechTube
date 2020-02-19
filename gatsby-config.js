@@ -1,3 +1,10 @@
+require('dotenv').config() // required by "gatsby" & NOT  required for "zeit-hosting"
+
+/*---------ENVIRONMENT VARIABLES------------------------
+ .env file -> for local development -> yarn develop
+ now.json file -> for build during hosting -> now
+*/
+
 module.exports = {
   siteMetadata: {
     title: "Tech-Tube",
@@ -16,7 +23,7 @@ module.exports = {
     {
       resolve: `gastsby-source-youtube-v3`,
       options: {
-        key: "AIzaSyD795V8WoL_JXYHqqUgCEgxh783QCXTpII",
+        API_KEY: process.env.YOUTUBE_DATA_API,
         kind: "playlistItems",
         id: "PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG",
         name: "CssGrid",
@@ -25,7 +32,7 @@ module.exports = {
     {
       resolve: `gastsby-source-youtube-v3`,
       options: {
-        key: "AIzaSyD795V8WoL_JXYHqqUgCEgxh783QCXTpII",
+        API_KEY: process.env.YOUTUBE_DATA_API,
         kind: "playlistItems",
         id: "PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb",
         name: "Algorithms",
@@ -34,7 +41,7 @@ module.exports = {
     {
       resolve: `gastsby-source-youtube-v3`,
       options: {
-        key: "AIzaSyD795V8WoL_JXYHqqUgCEgxh783QCXTpII",
+        API_KEY: process.env.YOUTUBE_DATA_API,
         kind: "playlistItems",
         id: "PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy",
         name: "CsBasics",
@@ -43,7 +50,7 @@ module.exports = {
     {
       resolve: `gastsby-source-youtube-v3`,
       options: {
-        key: "AIzaSyD795V8WoL_JXYHqqUgCEgxh783QCXTpII",
+        API_KEY: process.env.YOUTUBE_DATA_API,
         kind: "playlistItems",
         id: "PLnhBKTWCbQKQYBOMx_PVA3VnLf8_YoZkg",
         name: "Philosophy",
@@ -52,7 +59,7 @@ module.exports = {
     {
       resolve: `gastsby-source-youtube-v3`,
       options: {
-        key: "AIzaSyD795V8WoL_JXYHqqUgCEgxh783QCXTpII",
+        API_KEY: process.env.YOUTUBE_DATA_API,
         kind: "playlistItems",
         id: "PLnhBKTWCbQKSVi_h47y4b-0KlW4Y5LExR",
         name: "TechTalks",

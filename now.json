@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "YOUTUBE_DATA_API": "@youtube_data_api"
+    }
+  }
+}
