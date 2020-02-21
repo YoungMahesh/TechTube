@@ -65,6 +65,15 @@ module.exports = {
         name: "TechTalks",
       },
     },
+    {
+      resolve: `gastsby-source-youtube-v3`,
+      options: {
+        API_KEY: process.env.YOUTUBE_DATA_API,
+        kind: "playlistItems",
+        id: "PLnhBKTWCbQKSHk6vZZQYCei8o1xjvgHRF",
+        name: "Songs",
+      },
+    },
   ],
 }
 
