@@ -1,4 +1,4 @@
-require('dotenv').config() // required by "gatsby" & NOT  required for "zeit-hosting"
+require("dotenv").config() // required by "gatsby" & NOT  required for "zeit-hosting"
 
 /*---------ENVIRONMENT VARIABLES------------------------
  .env file -> for local development -> yarn develop
@@ -76,4 +76,3 @@ module.exports = {
     },
   ],
 }
-
